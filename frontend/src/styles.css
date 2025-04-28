@@ -1,0 +1,139 @@
+/* Global styles */
+html,body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #333;
+    height: 100%;
+  }
+  
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+  
+  /* Search component styles */
+  .search-container {
+    margin-bottom: 2rem;
+  }
+  
+  .search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .search-box input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-box button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-results li button {
+    background: none;
+    border: none;
+    color: #2980b9;
+    cursor: pointer;
+    text-align: left;
+    padding: 8px 0;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .search-results li button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Entity view styles */
+  .entity-view {
+    border-top: 2px solid #ecf0f1;
+    padding-top: 2rem;
+  }
+  
+  .loading-message, .error-message {
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .loading-message {
+    background-color: #f8f9fa;
+    color: #7f8c8d;
+  }
+  
+  .error-message {
+    background-color: #fdecea;
+    color: #c62828;
+  }
+  
+  /* Property list styles */
+  .property-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .property-list li {
+    margin-bottom: 1.5rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .property-list strong {
+    color: #2c3e50;
+  }
+  
+  .property-list ul ul {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+  
+  .property-list ul ul li {
+    background: none;
+    padding: 0.25rem 0;
+    border-left: none;
+    margin-bottom: 0;
+    color: #7f8c8d;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive base font size */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

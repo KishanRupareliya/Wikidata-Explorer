@@ -1,0 +1,11 @@
+<div class="property-list">
+    <h3>Properties:</h3>
+    <ul>
+      <li *ngFor="let prop of properties">
+        <strong>{{ prop.id }}:</strong>
+        <ul>
+          <li *ngFor="let value of prop.values">{{ value.value }}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>

@@ -1,0 +1,40 @@
+<div class="search-container">
+  <div class="search-box">
+    <input 
+      type="text" 
+      [(ngModel)]="query" 
+      (keyup.enter)="search()"
+      placeholder="Search (e.g., 'Chemnitz')"
+    >
+    <button (click)="search()" [disabled]="isLoading">
+      {{ isLoading ? 'Searching...' : 'Search' }}
+    </button>
+  </div>
+
+  @if (errorMessage) {
+    <div class="error-message">
+      <!-- <svg class="error-icon" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+      </svg> -->
+      {{ errorMessage }}
+    </div>
+  }
+
+  @if (results.length > 0) {
+    <div class="search-results">
+      <h3>Search Results:</h3>
+      <ul>
+        @for (result of results; track result.id) {
+          <li>
+            <button (click)="viewDetails(result)">
+              {{ result.label }} 
+              @if (result.description) {
+                <span>({{ result.description }})</span>
+              }
+            </button>
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</div>

@@ -1,0 +1,16 @@
+<div class="entity-view">
+    <h2>{{ entity.label }}</h2>
+    <p *ngIf="entity.description">{{ entity.description }}</p>
+  
+    <div *ngIf="isLoading" class="loading-message">
+      Loading entity details...
+    </div>
+  
+    <div *ngIf="error" class="error-message">
+      {{ error }}
+    </div>
+  
+    <div *ngIf="details">
+      <app-property-list [properties]="details.properties"></app-property-list>
+    </div>
+  </div>

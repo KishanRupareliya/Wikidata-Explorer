@@ -1,0 +1,24 @@
+.app-container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers children */
+    justify-content: center; /* Vertically centers in available space */
+    min-height: 200px; /* Ensures consistent centering */
+  }
+  
+/* Desktop layout */
+@media (min-width: 768px) {
+  .search-box {
+    flex-direction: row; /* Side-by-side on desktop */
+  }
+  
+  .search-box input[type="text"] {
+    width: 70%; /* Input takes more space */
+  }
+  
+  .search-box button {
+    width: 30%; /* Button takes less space */
+    max-width: none;
+  }
+}
