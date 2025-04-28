@@ -40,15 +40,4 @@ export class EntityDetailsComponent {
   goBack(): void {
     this.router.navigate(['/']);
   }
-
-  // goBack() {
-  //   // Navigate back with preserved state
-  //   this.router.navigate(['/'], {
-  //     state: {
-  //       searchQuery: history.state?.searchQuery,
-  //       searchResults: history.state?.searchResults
-  //     }
-  //   });
-  // }
-
 }
