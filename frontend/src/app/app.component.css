@@ -1,11 +1,12 @@
 .app-container {
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Horizontally centers children */
-    justify-content: center; /* Vertically centers in available space */
-    min-height: 200px; /* Ensures consistent centering */
-  }
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
 /* Desktop layout */
 @media (min-width: 768px) {

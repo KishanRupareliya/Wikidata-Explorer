@@ -1,16 +1,15 @@
 <div class="search-container">
-  <div class="search-box">
-    <input 
-      type="text" 
-      [(ngModel)]="query" 
-      (keyup.enter)="search()"
-      placeholder="Search (e.g., 'Chemnitz')"
-    >
-    <button (click)="search()" [disabled]="isLoading">
-      {{ isLoading ? 'Searching...' : 'Search' }}
-    </button>
-  </div>
-
+    <div class="search-box">
+      <input 
+        type="text" 
+        [(ngModel)]="query" 
+        (keyup.enter)="search()"
+        placeholder="Search (e.g., 'Chemnitz')"
+      >
+      <button (click)="search()" [disabled]="isLoading">
+        {{ isLoading ? 'Searching...' : 'Search' }}
+      </button>
+    </div> 
   @if (errorMessage) {
     <div class="error-message">
       <!-- <svg class="error-icon" viewBox="0 0 24 24">

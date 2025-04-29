@@ -33,12 +33,6 @@ export class SearchComponent {
       }
     });
   }
-  // search() {
-  //   this.wikidataService.search(this.query).subscribe(results => {
-  //     this.results = results;
-  //     this.searchState.setState(this.query, this.results);
-  //   });
-  // }
 
   search() {
     // Clear previous results and errors
@@ -50,11 +44,6 @@ export class SearchComponent {
       this.errorMessage = 'Please enter a search term';
       return;
     }
-
-    // if (this.query.length < 2) {
-    //   this.errorMessage = 'Search term must be at least 2 characters';
-    //   return;
-    // }
 
     if (/[^a-zA-Z0-9\s]/.test(this.query)) {
       this.errorMessage = 'Only letters, numbers and spaces allowed';
