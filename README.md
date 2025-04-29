@@ -5,7 +5,7 @@ A full-stack application to search and explore entities from Wikidata.
 - 🌐 Frontend: Angular
 - 🐍 Backend: Python (FastAPI)
 - Wikidata SPARQL query
-- 🚀 Auto-setup scripts provided for Linux/macOS (`build-and-run.sh`) and Windows (`build-and-run.bat`)
+- 🚀 Auto-setup scripts provided for Linux/macOS (`build.sh`) and Windows (`build.bat`)
 
 ---
 
